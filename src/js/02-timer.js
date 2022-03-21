@@ -70,13 +70,13 @@ function convertMs(ms) {
     return { days, hours, minutes, seconds };
   }
 
-  function pad(value) {
+  function addLeadingZero(value) {
       return String(value).padStart(2, '0');
   }
 
   function populateDate(config) {
-    refs.dataDays.textContent = pad(config.days);
-    refs.dataHours.textContent = pad(config.hours);
-    refs.dataMinutes.textContent = pad(config.minutes);
-    refs.dataSeconds.textContent = pad(config.seconds);
+    refs.dataDays.textContent = addLeadingZero(config.days);
+    refs.dataHours.textContent = addLeadingZero(config.hours);
+    refs.dataMinutes.textContent = addLeadingZero(config.minutes);
+    refs.dataSeconds.textContent = addLeadingZero(config.seconds);
   }
