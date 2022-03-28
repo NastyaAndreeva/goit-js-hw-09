@@ -18,6 +18,7 @@ function onFormInput(event) {
 
 function onFormSubmit(event) {
   event.preventDefault();
+  
   let time = Number(formData.delay);
   for (let i = 0; i < formData.amount; i += 1) {
     setTimeout(() => {
