@@ -18,7 +18,7 @@ function onFormInput(event) {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  
+
   let time = Number(formData.delay);
   for (let i = 0; i < formData.amount; i += 1) {
     setTimeout(() => {
@@ -30,10 +30,10 @@ function onFormSubmit(event) {
 }
 
 let formData = {};
-const ref = {
+const refs = {
   form: document.querySelector('.form')
 }
 
-ref.form.addEventListener('submit', onFormSubmit);
-ref.form.addEventListener('input', onFormInput);
+refs.form.addEventListener('submit', onFormSubmit);
+refs.form.addEventListener('input', onFormInput);
 
