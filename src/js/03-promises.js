@@ -23,7 +23,7 @@ function onFormSubmit(event) {
     setTimeout(() => {
       createPromise(i + 1, time + i * Number(formData.step))
       .then(message => Notiflix.Notify.success(message))
-      .catch(e => Notiflix.Notify.failure(e));
+      .catch(error => Notiflix.Notify.failure(error));
     }, time + i * Number(formData.step));
   }
 }
