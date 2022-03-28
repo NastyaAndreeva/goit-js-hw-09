@@ -31,7 +31,7 @@ function onFormSubmit(event) {
 
 let formData = {};
 const refs = {
-  form: document.querySelector('.form')
+  form: document.querySelector('.form'),
 }
 
 refs.form.addEventListener('submit', onFormSubmit);
