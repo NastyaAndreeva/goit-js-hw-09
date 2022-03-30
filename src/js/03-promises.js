@@ -29,6 +29,7 @@ function onFormSubmit(event) {
   }
 }
 
+//variables
 let formData = {};
 const refs = {
   form: document.querySelector('.form'),
